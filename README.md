@@ -1,5 +1,5 @@
 # TransientViT: CNN-Transformer hybird real/bogus classifier for the Kilodegree Automatic Transient Survey (KATS)
-
+TransientViT is a CNN-Vision Transformer (ViT) hybird model to differentiate between transients (real detections) and image artifacts (bogus detections) for the Kilodegree Automatic Transient Survey (KATS).
 ## Quickstart Guide
 ### 0. 环境
 ```
@@ -77,3 +77,61 @@ python inference.py --img-src images/6230719202803006276.jpg --device 0 --out-pa
     },
 ]
 ```
+## Dataset
+KATS Image Sample
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/sample.png">
+</div>
+
+Image Preprocessing
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/preprocess.png">
+</div>
+
+## Model Architecture
+Overall Architecture
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/network.png">
+</div>
+
+Hierarchical Attention Block
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/figure_hat.png">
+</div>
+
+Adaptive Cross-Attention Head
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/figure_crossattention.png">
+</div>
+
+## Cross Inference
+A voting-based ensemble is applied to the three inference results to obtain the final result.
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/figure_cross_inference.png">
+</div>
+
+
+## Model Performances
+
+Confusion Matrix
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/cm_test.png">
+</div>
+
+
+
+Training and Validation Loss
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/loss.jpg">
+</div>
+
+
+ROC Curve
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/roc_curve.jpg">
+</div>
+
+Distribution of output probability (to be real). Red and blue colors show the histograms for real and bogus samples respectively.
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/hist_real.jpg">
+</div>
