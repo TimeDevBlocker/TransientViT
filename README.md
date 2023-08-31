@@ -105,7 +105,7 @@ Adaptive Cross-Attention Head
 </div>
 
 ## Cross Inference
-A voting-based ensemble is applied to the three inference results to obtain the final result.
+A voting-based ensemble is applied to the three inference results in order to obtain the final result.
 <div align="center">
   <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/figure_cross_inference.png">
 </div>
