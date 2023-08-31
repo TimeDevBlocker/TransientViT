@@ -1,0 +1,1 @@
+python inference.py --img-src images --device 0 --out-path output/result.json
