@@ -135,3 +135,8 @@ Distribution of output probability (to be real). Red and blue colors show the hi
 <div align="center">
   <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/hist_real.jpg">
 </div>
+
+## Ablation Study
+<div align="center">
+  <img src="https://github.com/TimeDevBlocker/TransientViT/blob/master/figures/ablation.png">
+</div>
