@@ -1,11 +1,3 @@
-#############################################
-# @File    :   inference.py
-# @Version :   1.0
-# @Author  :   JiaweiDong
-# @Time    :   2023/08/17  
-# @Desc    :   KATS Project Inference Code
-#############################################
-
 import glob
 import argparse
 import numpy as np
