@@ -1,5 +1,6 @@
-# TransientViT: CNN-Transformer hybird real/bogus classifier for the Kilodegree Automatic Transient Survey (KATS)
-TransientViT is a CNN-Vision Transformer (ViT) hybird model to differentiate between transients (real detections) and image artifacts (bogus detections) for the Kilodegree Automatic Transient Survey (KATS). Some image samples are provided in ./images for evaluation.
+# TransientViT: A novel CNN - Vision Transformer hybrid real/bogus transient classifier for the Kilodegree Automatic Transient Survey
+TransientViT is a CNN - Vision Transformer (ViT) hybird model to differentiate between transients (real detections) and image artifacts (bogus detections) for the Kilodegree Automatic Transient Survey (KATS). Some image samples are provided in ./images for evaluation.
+
 ## Quickstart Guide
 ### 0. 环境
 ```
